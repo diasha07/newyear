@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="snowFlakes/snow.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="snowFlakes/Snow.js"></script>
+    <script>
+	new Snow ();
+    </script>
+    <script type="text/javascript">
+        timeend= new Date();
+        timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+            timestr=today +" days "+ thour+" hours "+tmin+" min "+tsec+" sec ";
+            document.getElementById('t').innerHTML=timestr;
+            window.setTimeout("time()",1000);
+        }
+    </script>
+        <img class="tree" src="christree.webp" width="15%">
+        <img class="tree2" src="christree.webp" width="15%">
+        <p class="tt">Until the New Year:</p>
+        <body onload="time()">
+        <p id="t"></p>
+        <div class="text1">Find 10 hidden gifts in this picture</div>
+        <div class="big">
+            <img src='fon.png' width="85%">
+        </div>
+        <img class="gift1"  src="gift1.png" onclick="fgift(1)" width="4%">
+        <img  class="gift2" src="gift2.png" onclick="fgift(2)" width="4%">
+        <img class="gift3" src="gift3.png" onclick="fgift(3)" width="2%">
+        <img class="gift4" src="gift4.png" onclick="fgift(4)" width="5%">
+        <img class="gift5" src="gift5.png" onclick="fgift(5)" width="3%">
+        <img class="gift6" src="gift6.png" onclick="fgift(6)" width="3%">
+        <img class="gift7" src="gift7.png" onclick="fgift(7)" width="5%">
+        <img class="gift8" src="gift8.webp" onclick="fgift(8)" width="2%">
+        <img class="gift9" src="gift9.png" onclick="fgift(9)" width="2%">
+        <img class="gift10" src="gift10.png" onclick="fgift(10)" width="2%">
+        <p class="text2">You found:<span id="kol">0</span></p>
+        <script src="script.js"></script>
+</body>
+</html>
