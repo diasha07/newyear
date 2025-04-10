@@ -1,0 +1,120 @@
+@font-face {
+    font-family: christmas;
+    src: url(CandyCaneUnregistered-Gq3y.ttf);
+}
+@font-face {
+    font-family: christmas2;
+    src: url(EtherealDemo-Medium.otf);
+}
+@font-face {
+    font-family: christmas3;
+    src: url(EtherealDemo-ExtraBold.otf);
+}
+#t{
+    font-size:6vw;
+    text-align: center;
+    font-family: christmas;
+    color: #a90000;
+    transition: 0.3s;
+    filter: drop-shadow(0 0 5px #fffafa9a );
+}
+.tt{
+    font-size:6vw;
+    text-align: center;
+    font-family: christmas;
+    color: #a90000;
+    transition: 0.3s;
+    filter: drop-shadow(0 0 5px #fffafa9a );
+}
+body{
+    background-color: #dbc9be;
+    margin: auto;
+}
+.big{
+    width: 98vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    
+}
+.tree{
+    position: absolute;
+    top:2vw;
+}
+.tree2{
+    position: absolute;
+    top:2vw;
+    left: 83vw;
+}
+.text1{
+    font-size:3vw;
+    text-align: center;
+    font-family: christmas3;
+    color: #0c5900;
+}
+.gift1{
+    position: absolute;
+    left: 14vw;
+    top: 52vw;
+    z-index: 1000;
+}
+.gift2{
+    position: absolute;
+    left: 84vw;
+    top: 62vw;
+    z-index: 1001;
+}
+.gift3{
+    position: absolute;
+    left: 50vw;
+    top: 52vw;
+    z-index: 1001;
+}
+.gift4{
+    position: absolute;
+    left: 30vw;
+    top: 72vw;
+    z-index: 1001;
+}
+.gift5{
+    position: absolute;
+    left: 20vw;
+    top: 34vw;
+    z-index: 1001;
+}
+.gift6{
+    position: absolute;
+    left: 60vw;
+    top: 70vw;
+    z-index: 1001;
+}
+.gift7{
+    position: absolute;
+    left: 78vw;
+    top: 37vw;
+    z-index: 1001;
+}
+.gift8{
+    position: absolute;
+    left: 30vw;
+    top: 55vw;
+    z-index: 1001;
+}
+.gift9{
+    position: absolute;
+    left: 68vw;
+    top: 55vw;
+    z-index: 1001;
+}
+.gift10{
+    position: absolute;
+    left: 85vw;
+    top: 75vw;
+    z-index: 1001;
+}
+.text2{
+    font-size:3vw;
+    text-align: center;
+    font-family: christmas2;
+    color: #a90000;
+}
